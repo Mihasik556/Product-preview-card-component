@@ -11,7 +11,40 @@
 
 /* Utility Classes */
 
+html,
+body {
+    height: 100%;
+}
+
+/* VARIABLES */
+
+/*--Colors--*/
+:root {
+    --BG-COLOR: hsl(30, 38%, 92%);
+    --CARD-BG-COLOR: hsl(0, 0%, 100%);
+    --MAIN-TEXT-COLOR: hsl(228, 12%, 48%);
+    --TITLE-COLOR: hsl(212, 21%, 14%);
+    --MAIN-PRICE-COLOR: hsl(158, 36%, 37%);
+    --BUTTON-COLOR: hsl(158, 36%, 37%);
+    --ACTIVE-BUTTON-COLOR: hsl(158, 42%, 18%);
+}
+
+/*--Fonts--*/
+:root {
+    --BASIC-FONT: "Montserrat";
+    --TITLE-FONT: "Fraunces";
+}
+
 /* General Styles */
+
+body {
+    background-color: var(--BG-COLOR);
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+main {
+}
 
 .attribution {
     font-size: 0.6875rem;

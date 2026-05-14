@@ -1,6 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
-
 /* Reset */
 
 * {
@@ -10,6 +7,21 @@
 }
 
 /* Utility Classes */
+
+@font-face {
+    font-family: "Montserrat-M";
+    src: url("../assets/fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-B";
+    src: url("../assets/fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Fraunces-B";
+    src: url("../assets/fonts/Fraunces_72pt-Bold.ttf");
+}
 
 html,
 body {
@@ -31,8 +43,9 @@ body {
 
 /*--Fonts--*/
 :root {
-    --BASIC-FONT: "Montserrat";
-    --TITLE-FONT: "Fraunces";
+    --BASIC-FONT: "Montserrat-M";
+    --BASIC-FONT-BOLD: "Montserrat-B";
+    --TITLE-FONT: "Fraunces-B";
 }
 
 /* General Styles */

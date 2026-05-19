@@ -48,15 +48,45 @@ body {
     --TITLE-FONT: "Fraunces-B";
 }
 
+/*--Border-Radius--*/
+:root {
+    --BORDER-RADIUS: 0.5rem;
+}
+
 /* General Styles */
 
 body {
-    background-color: var(--BG-COLOR);
+    /* background-color: var(--BG-COLOR); */
+    background-color: black;
     display: grid;
     grid-template-rows: 1fr auto;
+    justify-items: center;
 }
 
 main {
+    background-color: var(--BG-COLOR);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    padding: 0 0.75rem;
+}
+
+.product {
+    background-color: var(--CARD-BG-COLOR);
+    display: flex;
+    flex-direction: column;
+    width: min(100%, 400px);
+    border-radius: var(--BORDER-RADIUS);
+}
+
+.product__img {
+    width: inherit;
+    aspect-ratio: 1.025/1;
+    background-image: url("../assets/images/image-product-mobile.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: var(--BORDER-RADIUS) var(--BORDER-RADIUS) 0 0;
 }
 
 .attribution {

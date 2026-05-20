@@ -45,7 +45,9 @@ body {
 :root {
     --BASIC-FONT: "Montserrat-M";
     --BASIC-FONT-BOLD: "Montserrat-B";
+    --BASIC-FONT-SIZE: 0.75rem;
     --TITLE-FONT: "Fraunces-B";
+    --TITLE-FONT-SIZE: 2.15rem;
 }
 
 /*--Border-Radius--*/
@@ -69,7 +71,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 375px;
-    padding: 0 0.75rem;
+    padding: 5rem 0.75rem;
 }
 
 .product {
@@ -87,6 +89,31 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: var(--BORDER-RADIUS) var(--BORDER-RADIUS) 0 0;
+}
+
+.product__info {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.product__label {
+    font-family: var(--BASIC-FONT);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: var(--BASIC-FONT-SIZE);
+    color: var(--MAIN-TEXT-COLOR);
+}
+
+.product__title {
+    font-family: var(--TITLE-FONT);
+    line-height: 100%;
+    color: var(--TITLE-COLOR);
+    font-size: var(--TITLE-FONT-SIZE);
+}
+
+.product__text {
 }
 
 .attribution {

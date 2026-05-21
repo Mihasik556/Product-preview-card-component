@@ -45,9 +45,12 @@ body {
 :root {
     --BASIC-FONT: "Montserrat-M";
     --BASIC-FONT-BOLD: "Montserrat-B";
-    --BASIC-FONT-SIZE: 0.75rem;
+    --BASIC-FONT-SIZE: 0.875rem;
+    --LABEL-FONT-SIZE: 0.75rem;
     --TITLE-FONT: "Fraunces-B";
     --TITLE-FONT-SIZE: 2.15rem;
+    --MAIN-PRICE-FONT-SIZE: 2.1rem;
+    --DELETED-PRICE-FONT-SIZE: 0.8rem;
 }
 
 /*--Border-Radius--*/
@@ -92,7 +95,7 @@ main {
 }
 
 .product__info {
-    padding: 2rem;
+    padding: 2rem 2rem 1.5rem 2rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -102,7 +105,7 @@ main {
     font-family: var(--BASIC-FONT);
     text-transform: uppercase;
     letter-spacing: 0.3rem;
-    font-size: var(--BASIC-FONT-SIZE);
+    font-size: var(--LABEL-FONT-SIZE);
     color: var(--MAIN-TEXT-COLOR);
 }
 
@@ -114,6 +117,32 @@ main {
 }
 
 .product__text {
+    font-family: var(--BASIC-FONT);
+    color: var(--MAIN-TEXT-COLOR);
+    font-size: var(--BASIC-FONT-SIZE);
+    line-height: 1.5rem;
+}
+
+.product__price-block {
+    padding: 0 2rem 1.45rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.product__main-price {
+    color: var(--MAIN-PRICE-COLOR);
+    font-family: var(--TITLE-FONT);
+    font-size: var(--MAIN-PRICE-FONT-SIZE);
+    line-height: 100%;
+}
+
+.product__deleted-price {
+    color: var(--MAIN-TEXT-COLOR);
+    font-family: var(--BASIC-FONT);
+    text-decoration: line-through;
+    font-size: var(--DELETED-PRICE-FONT-SIZE);
+    line-height: 100%;
 }
 
 .attribution {

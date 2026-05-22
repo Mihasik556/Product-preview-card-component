@@ -34,11 +34,12 @@ body {
 :root {
     --BG-COLOR: hsl(30, 38%, 92%);
     --CARD-BG-COLOR: hsl(0, 0%, 100%);
+    --BUTTON-TEXT-COLOR: hsl(0, 0%, 100%);
     --MAIN-TEXT-COLOR: hsl(228, 12%, 48%);
     --TITLE-COLOR: hsl(212, 21%, 14%);
     --MAIN-PRICE-COLOR: hsl(158, 36%, 37%);
-    --BUTTON-COLOR: hsl(158, 36%, 37%);
-    --ACTIVE-BUTTON-COLOR: hsl(158, 42%, 18%);
+    --BUTTON-BG-COLOR: hsl(158, 36%, 37%);
+    --ACTIVE-BUTTON-BG-COLOR: hsl(158, 42%, 18%);
 }
 
 /*--Fonts--*/
@@ -143,6 +144,34 @@ main {
     text-decoration: line-through;
     font-size: var(--DELETED-PRICE-FONT-SIZE);
     line-height: 100%;
+}
+
+.product__buy-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem 2rem 2rem;
+    color: var(--BUTTON-TEXT-COLOR);
+    background-color: var(--BUTTON-BG-COLOR);
+    border: none;
+    padding: 1rem 0;
+    border-radius: var(--BORDER-RADIUS);
+    font-family: var(--BASIC-FONT-BOLD);
+    cursor: pointer;
+}
+
+.product__buy-button:hover,
+.product__buy-button:active {
+    background-color: var(--ACTIVE-BUTTON-BG-COLOR);
+}
+
+.product__buy-button:active {
+    transform: scale(0.98);
+}
+
+.product__after-cart::before {
+    content: url(../assets/images/icon-cart.svg);
+    margin-right: 0.5rem;
 }
 
 .attribution {

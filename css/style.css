@@ -49,8 +49,8 @@ body {
     --BASIC-FONT-SIZE: 0.875rem;
     --LABEL-FONT-SIZE: 0.75rem;
     --TITLE-FONT: "Fraunces-B";
-    --TITLE-FONT-SIZE: 2.15rem;
-    --MAIN-PRICE-FONT-SIZE: 2.1rem;
+    --TITLE-FONT-SIZE: 2.1rem;
+    --MAIN-PRICE-FONT-SIZE: 2rem;
     --DELETED-PRICE-FONT-SIZE: 0.8rem;
 }
 
@@ -108,6 +108,7 @@ main {
 .product__label {
     font-family: var(--BASIC-FONT);
     text-transform: uppercase;
+    line-height: 120%;
     letter-spacing: 0.3rem;
     font-size: var(--LABEL-FONT-SIZE);
     color: var(--MAIN-TEXT-COLOR);
@@ -124,7 +125,7 @@ main {
     font-family: var(--BASIC-FONT);
     color: var(--MAIN-TEXT-COLOR);
     font-size: var(--BASIC-FONT-SIZE);
-    line-height: 1.5rem;
+    line-height: 160%;
 }
 
 .product__price-block {
@@ -178,11 +179,39 @@ main {
     text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--BUTTON-BG-COLOR);
 }
 
 @media screen and (min-width: 768px) {
     .product {
         flex-direction: row;
+        width: 600px;
+    }
+
+    .product__img-block {
+        min-height: 100%;
+        width: 50%;
+    }
+
+    figure,
+    .product__img {
+        height: 100%;
+    }
+
+    .product__img {
+        background-image: url("../assets/images/image-product-desktop.jpg");
+        background-size: cover;
+        background-position: center;
+        border-radius: var(--BORDER-RADIUS) 0 0 var(--BORDER-RADIUS);
+        width: 100%;
+    }
+
+    .product__info {
+        gap: 2rem;
+        width: 300px;
+    }
+
+    .product__text-block {
+        gap: 1.5rem;
     }
 }

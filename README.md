@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-I`m really for this project, because I've tried many new things in it. I practiced CSS Variables, continued wotking on Mobile-First Workflow, tried to make this project only using my eyes to see how sharp my 'CSS eye' is, met some problems when it came to media quaries.
+I`m really thankful for this project, because I've tried many new things in it. I practiced CSS Variables, continued wotking on Mobile-First Workflow, tried to make this project only using my eyes to see how sharp my 'CSS eye' is, met some problems when it came to media quaries.
 
 For example, there is some code I`m proud of:
 
